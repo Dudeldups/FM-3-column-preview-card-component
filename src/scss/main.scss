@@ -1,0 +1,68 @@
+@use "resets";
+@use "colors";
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: clamp(1rem, -0.56rem + 8.82vw, 1.5rem);
+  font: 400 0.9375rem "Lexend Deca", sans-serif;
+  color: colors.$white;
+}
+
+.container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.category {
+  display: grid;
+  padding: 3rem clamp(1.25rem, -9.04rem + 51.47vw, 3rem);
+  max-width: 20.3125rem;
+
+  &-sedans {
+    $category-color: colors.$orange;
+    background: $category-color;
+
+    & > button {
+      color: $category-color;
+    }
+  }
+
+  &-suvs {
+    $category-color: colors.$cyan;
+    background: $category-color;
+
+    & > button {
+      color: $category-color;
+    }
+  }
+
+  &-luxury {
+    $category-color: colors.$dark-cyan;
+    background: $category-color;
+
+    & > button {
+      color: $category-color;
+    }
+  }
+
+  &__title {
+    margin-top: 2.2rem;
+    font: 700 2.5rem "Big Shoulders Display", cursive;
+    color: colors.$light-gray;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 1.5rem;
+    line-height: 1.7;
+  }
+
+  &__button {
+    margin-top: 1.8rem;
+    padding: 0.8rem;
+    width: 16ch;
+    background-color: colors.$light-gray;
+    border-radius: 100px;
+  }
+}

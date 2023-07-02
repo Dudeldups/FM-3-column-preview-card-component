@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  padding: clamp(1rem, -0.56rem + 8.82vw, 1.5rem);
+  font: 400 0.9375rem "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.category {
+  display: grid;
+  padding: 3rem clamp(1.25rem, -9.04rem + 51.47vw, 3rem);
+  max-width: 20.3125rem;
+}
+.category-sedans {
+  background: hsl(31, 77%, 52%);
+}
+.category-sedans > button {
+  color: hsl(31, 77%, 52%);
+}
+.category-suvs {
+  background: hsl(184, 100%, 22%);
+}
+.category-suvs > button {
+  color: hsl(184, 100%, 22%);
+}
+.category-luxury {
+  background: hsl(179, 100%, 13%);
+}
+.category-luxury > button {
+  color: hsl(179, 100%, 13%);
+}
+.category__title {
+  margin-top: 2.2rem;
+  font: 700 2.5rem "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+.category__description {
+  margin-top: 1.5rem;
+  line-height: 1.7;
+}
+.category__button {
+  margin-top: 1.8rem;
+  padding: 0.8rem;
+  width: 16ch;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100px;
+}/*# sourceMappingURL=main.css.map */
