@@ -68,6 +68,7 @@ body {
   display: flex;
   justify-content: center;
   padding: clamp(0.9rem, -0.56rem + 8.82vw, 1.5rem);
+  background-color: hsl(0, 0%, 95%);
   font: 400 0.9375rem "Lexend Deca", sans-serif;
   color: hsla(0, 0%, 100%, 0.75);
 }

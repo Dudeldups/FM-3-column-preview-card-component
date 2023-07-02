@@ -19,7 +19,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- [Solution on Frontend Mentor]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/scss-responsive-3columncard-Ndu0FNRJ11)
 - [Live site](https://dudeldups.github.io/FM-3-column-preview-card-component/)
 
 ## My process

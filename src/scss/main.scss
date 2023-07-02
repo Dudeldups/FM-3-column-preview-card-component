@@ -5,6 +5,7 @@ body {
   display: flex;
   justify-content: center;
   padding: clamp(0.9rem, -0.56rem + 8.82vw, 1.5rem);
+  background-color: colors.$light-gray;
   font: 400 0.9375rem "Lexend Deca", sans-serif;
   color: colors.$white;
 
