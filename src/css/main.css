@@ -67,20 +67,35 @@ button {
 body {
   display: flex;
   justify-content: center;
-  padding: clamp(1rem, -0.56rem + 8.82vw, 1.5rem);
+  padding: clamp(0.9rem, -0.56rem + 8.82vw, 1.5rem);
   font: 400 0.9375rem "Lexend Deca", sans-serif;
   color: hsla(0, 0%, 100%, 0.75);
+}
+@media only screen and (min-width: 60em) {
+  body {
+    align-items: center;
+  }
 }
 
 .container {
   overflow: hidden;
   border-radius: 10px;
 }
+@media only screen and (min-width: 60em) {
+  .container {
+    display: flex;
+  }
+}
 
 .category {
   display: grid;
-  padding: 3rem clamp(1.25rem, -9.04rem + 51.47vw, 3rem);
+  padding: 3rem clamp(1rem, -9.04rem + 51.47vw, 3rem);
   max-width: 20.3125rem;
+}
+@media only screen and (min-width: 60em) {
+  .category {
+    max-width: 19.0625rem;
+  }
 }
 .category-sedans {
   background: hsl(31, 77%, 52%);
@@ -112,8 +127,13 @@ body {
 }
 .category__button {
   margin-top: 1.8rem;
-  padding: 0.8rem;
+  padding: 0.85rem;
   width: 16ch;
   background-color: hsl(0, 0%, 95%);
   border-radius: 100px;
+}
+@media only screen and (min-width: 60em) {
+  .category__button {
+    margin-top: 5.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
